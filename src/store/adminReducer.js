@@ -1,10 +1,8 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import adminAuthReducer from "../features/admin/authSlice";
-import adminProductReducer from "../features/admin/productSlice";
+import authReducer from "../features/admin/auth/auth-slice";
 
 const adminReducer = combineReducers({
-  auth: adminAuthReducer,
-  product: adminProductReducer,
+  auth: authReducer,
 });
 
 export default adminReducer;

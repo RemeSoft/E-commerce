@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply h-5 w-6 text-custom-text-primary-light;
+  }
+  .icon-sm {
+    @apply h-2 w-2 text-custom-text-primary-light;
+  }
+  .icon-lg {
+    @apply h-6 w-6 text-custom-text-primary-light;
+  }
+  .radius {
+    @apply rounded-md;
+  }
+  .radius-sm {
+    @apply rounded-sm;
+  }
+  .sidebar-active-link {
+    @apply bg-custom-tertiary-light;
+  }
+}
