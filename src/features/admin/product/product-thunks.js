@@ -1,0 +1,10 @@
+import { createAsyncThunk } from "@reduxjs/toolkit";
+import api from "../../api";
+
+export const createProductType = createAsyncThunk(
+  "product/create-product-type",
+  async (data) => {
+    const response = await api.post("/admin/product-type", data);
+    return response.data;
+  },
+);

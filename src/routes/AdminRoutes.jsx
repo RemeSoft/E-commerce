@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Login, Overview } from "../admin/pages";
 import AdminLayout from "../layouts/AdminLayout";
+import { Login, Overview, Category } from "../admin/pages";
 
 // admin routes
 const routes = [
@@ -12,6 +12,10 @@ const routes = [
       {
         path: "",
         element: <Overview />,
+      },
+      {
+        path: "category",
+        element: <Category />,
       },
     ],
   },

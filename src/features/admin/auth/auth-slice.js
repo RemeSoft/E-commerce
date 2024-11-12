@@ -38,9 +38,8 @@ const extraReducers = (builder) => {
       localStorage.setItem("isAuthenticated", "true");
 
       // set Authorization header
-      api.defaults.headers.common[
-        "Authorization"
-      ] = `Bearer ${action.payload.token}`;
+      api.defaults.headers.common["Authorization"] =
+        `Bearer ${action.payload.token}`;
     })
     .addCase(loginRequest.rejected, (state, action) => {
       state.status = "failed";
@@ -56,6 +55,6 @@ const authSlice = createSlice({
   reducers,
 });
 
-//export actions and reducers
+//export actions and reducer
 export const { logout } = authSlice.actions;
 export default authSlice.reducer;

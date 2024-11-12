@@ -15,8 +15,8 @@ export default function Login() {
   const { register, handleSubmit } = useForm();
 
   // getting states
-  const { status, isAuthenticated, error } = useSelector(
-    (state) => state.admin.auth
+  const { isAuthenticated, status, error } = useSelector(
+    (state) => state.admin.auth,
   );
 
   // methods
@@ -44,8 +44,8 @@ export default function Login() {
                 {status === "loading"
                   ? "Loading... Please wait."
                   : status === "failed"
-                  ? "Failed to load. Try again later."
-                  : "Enter your email below to login to your account."}
+                    ? "Failed to load. Try again later."
+                    : "Enter your email below to login to your account."}
               </p>
               <form
                 className="mt-3 flex flex-col lg:min-w-80"
