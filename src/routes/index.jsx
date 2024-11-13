@@ -1,13 +1,15 @@
+import Layout from "../layouts/Layout";
 import { createBrowserRouter } from "react-router-dom";
-import AdminLayout from "../layouts/AdminLayout";
-import { Login, Overview, Category } from "../admin/pages";
+import Login from "../pages/Login";
+import Overview from "../pages/Overview";
+import Category from "../pages/Category";
 
 // admin routes
 const routes = [
   { path: "/admin/login", element: <Login /> },
   {
     path: "/admin",
-    element: <AdminLayout />,
+    element: <Layout />,
     children: [
       {
         path: "",

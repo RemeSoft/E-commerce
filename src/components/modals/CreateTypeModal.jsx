@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { createType } from "../../../../features/admin/type/type-thunks";
-import { useModalContext } from "../../../../contexts/ModalContext";
+import { createType } from "../../features/type/type-thunks";
+import { useModalContext } from "../../contexts/ModalContext";
 import { useDispatch } from "react-redux";
 
 export default function CreateTypeModal() {

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { createCategory } from "../../../../features/admin/category/category-thunks";
-import { loadTypes } from "../../../../features/admin/type/type-thunks";
-import { useModalContext } from "../../../../contexts/ModalContext";
+import { createCategory } from "../../features/category/category-thunks";
+import { loadTypes } from "../../features/type/type-thunks";
+import { useModalContext } from "../../contexts/ModalContext";
 
 export default function CreateCategoryModal() {
   const dispatch = useDispatch();

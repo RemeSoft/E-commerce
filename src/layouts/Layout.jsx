@@ -1,9 +1,8 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import Header from "../admin/components/Header";
-import Sidebar from "../admin/components/Sidebar";
-import Protected from "../components/Protected";
 import { ModalProvider } from "../contexts/ModalContext";
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import Protected from "./Protected";
 import "../index.css";
 
 export default function AdminLayout() {

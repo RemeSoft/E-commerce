@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import api from "../../api";
+import api from "../../app/api";
 
 export const createType = createAsyncThunk("type/create-type", async (data) => {
   const response = await api.post("/admin/type", data);

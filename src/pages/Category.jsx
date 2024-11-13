@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCategories } from "../../../features/admin/category/category-thunks";
-import { API_URL } from "../../../features/api";
-import { useModalContext } from "../../../contexts/ModalContext";
-import Modals from "../../components/Modals";
+import { fetchCategories } from "../features/category/category-thunks";
+import { useModalContext } from "../contexts/ModalContext";
+import { API_URL } from "../app/api";
+import Modals from "../components/modals/Modal";
 
 export default function Category() {
   const dispatch = useDispatch();
 
   // getting states
   const { openModal, modalOpenHandler } = useModalContext();
-  const { categories } = useSelector((state) => state.admin.category);
+  const { categories } = useSelector((state) => state.category);
 
   // loading product types
   useEffect(() => {

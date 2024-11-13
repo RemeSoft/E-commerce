@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { loginRequest } from "./auth-thunks";
-import api from "../../api";
+import api from "../../app/api";
 
 // essential states
 const states = {

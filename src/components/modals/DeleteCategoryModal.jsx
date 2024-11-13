@@ -1,7 +1,7 @@
 import React from "react";
-import { useModalContext } from "../../../../contexts/ModalContext";
-import { deleteCategory } from "../../../../features/admin/category/category-thunks";
 import { useDispatch } from "react-redux";
+import { useModalContext } from "../../contexts/ModalContext";
+import { deleteCategory } from "../../features/category/category-thunks";
 
 function DeleteCategoryModal() {
   const dispatch = useDispatch();

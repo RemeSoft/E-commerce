@@ -1,8 +1,8 @@
 import React from "react";
 import { useModalContext } from "../../contexts/ModalContext";
-import CreateTypeModal from "../pages/category/modals/CreateTypeModal";
-import CreateCategoryModal from "../pages/category/modals/CreateCategoryModal";
-import DeleteCategoryModal from "../pages/category/modals/DeleteCategoryModal";
+import CreateTypeModal from "./CreateTypeModal";
+import CreateCategoryModal from "./CreateCategoryModal";
+import DeleteCategoryModal from "./DeleteCategoryModal";
 
 function Modals({ openModal }) {
   // modal close handler

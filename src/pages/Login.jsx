@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import logo from "../../../assets/logo.png";
-import { loginRequest } from "../../../features/admin/auth/auth-thunks";
+import logo from "../assets/logo.png";
+import { loginRequest } from "../features/auth/auth-thunks";
 
 export default function Login() {
   // initialization
